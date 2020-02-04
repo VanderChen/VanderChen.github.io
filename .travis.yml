@@ -15,6 +15,6 @@ deploy:
   keep-history: true
   on:
     # all_branches: true # solve a permission problem
-    branch: hexo
     target_branch: master
+    branch: hexo
   local-dir: public
