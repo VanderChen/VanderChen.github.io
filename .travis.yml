@@ -12,8 +12,9 @@ deploy:
   provider: pages
   cleanup: true
   github-token: $GH_TOKEN
-  # keep_history: true
+  keep_history: true
   on:
-    all_branches: true
+    # all_branches: true
+    branch: hexo
     target_branch: master   
   local_dir: public
