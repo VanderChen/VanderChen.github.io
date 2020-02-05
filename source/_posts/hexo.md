@@ -6,6 +6,8 @@ tags:
 - Travis CI
 ---
 
+**将基于Hexo的个人blog使用Travis CI自动部署到Github Pages**
+
 具体操作流程参考：
 - 建站流程 [Hexo建站](https://hexo.io/zh-cn/docs/setup)
 - 利用Travis CI实现自动部署 [将 Hexo 部署到 GitHub Pages](https://hexo.io/zh-cn/docs/github-pages)
