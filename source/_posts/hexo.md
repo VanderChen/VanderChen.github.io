@@ -2,8 +2,8 @@
 title: Hexo + GitHub Pages + Travis CI
 date: {{ date }}
 tags: {
-  Hexo,
-  Travis CI
+  "Hexo",
+  "Travis CI"
 }
 ---
 
