@@ -63,8 +63,6 @@ deploy:
   github-token: $GH_TOKEN
   keep-history: true
   on:
-    # all_branches: true # solve a permission problem
-    
     branch: hexo
   target_branch: master
   local-dir: public
