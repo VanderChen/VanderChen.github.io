@@ -4,8 +4,8 @@
 
 # Site
 title: VanderChen's Dev Blog
-subtitle: ''
-description: 'Solutions to bugs encountered when developing according to developer documentation'
+subtitle: 'Record bugs when following developer documentation'
+description: ''
 keywords:
 author: Vander Chen
 language: en
