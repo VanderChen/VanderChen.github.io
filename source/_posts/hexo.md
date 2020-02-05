@@ -1,10 +1,9 @@
 ---
 title: Hexo + GitHub Pages + Travis CI
 date: {{ date }}
-tags: {
-  "Hexo",
-  "Travis CI"
-}
+tags: 
+- Hexo
+- Travis CI
 ---
 
 具体操作流程参考：
