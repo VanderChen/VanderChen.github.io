@@ -1,6 +1,10 @@
 ---
 title: Hexo + GitHub Pages + Travis CI
 date: {{ date }}
+tags: {
+  Hexo,
+  Travis CI
+}
 ---
 
 具体操作流程参考：
@@ -37,7 +41,7 @@ package-lock.json
 ```
 
 ## Travis CI
-因为github pages规则的变化，user pages（即以<user name>.github.io命名的repo）生成pages文件仅仅只能放在master branch中。
+因为github pages规则的变化，user pages（即以\<user name\>.github.io命名的repo）生成pages文件仅仅只能放在master branch中。
 
 ```
 User pages must be built from the master branch.
