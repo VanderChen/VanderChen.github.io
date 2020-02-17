@@ -2,8 +2,7 @@
 <li>Ubuntu下Docker的安装 <a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/" target="_blank" rel="noopener">Get Docker Engine - Community for Ubuntu</a></li>
 <li>Kubernetes的安装：实验环境下我们使用MiniKube <a href="https://kubernetes.io/docs/tasks/tools/install-minikube/" target="_blank" rel="noopener">Install Minikube</a> </li>
 </ul>
-<h3 id="踩坑–网络问题"><a href="#踩坑–网络问题" class="headerlink" title="踩坑–网络问题"></a>踩坑–网络问题</h3><p><strong>阿里云镜像安装k8s</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get update &amp;&amp; apt-get install -y apt-transport-https</span><br></pre></td></tr></table></figure>
+<h3 id="踩坑–网络问题"><a href="#踩坑–网络问题" class="headerlink" title="踩坑–网络问题"></a>踩坑–网络问题</h3><h4 id="阿里云镜像安装k8s"><a href="#阿里云镜像安装k8s" class="headerlink" title="阿里云镜像安装k8s"></a>阿里云镜像安装k8s</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get update &amp;&amp; apt-get install -y apt-transport-https</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://mirrors.aliyun.com/kubernetes/apt/doc/apt-key.gpg | apt-key add -</span><br></pre></td></tr></table></figure>
 
@@ -12,8 +11,7 @@
 
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install -y kubelet kubeadm kubectl</span><br></pre></td></tr></table></figure>
 
-<p><strong>k8s.gcr.io拉取镜像问题</strong></p>
-<p><a href="http://mirror.azure.cn/" target="_blank" rel="noopener">Azure中国-开源镜像站点</a>提供了gcr.io及k8s.gcr.io容器仓库的镜像代理服务</p>
+<h4 id="k8s-gcr-io拉取镜像问题"><a href="#k8s-gcr-io拉取镜像问题" class="headerlink" title="k8s.gcr.io拉取镜像问题"></a>k8s.gcr.io拉取镜像问题</h4><p><a href="http://mirror.azure.cn/" target="_blank" rel="noopener">Azure中国-开源镜像站点</a>提供了gcr.io及k8s.gcr.io容器仓库的镜像代理服务</p>
 <p>Minikube简单解决方案</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">minikube start --vm-driver=&lt;driver&gt; --image-repository=gcr.azk8s.cn/google_containers</span><br></pre></td></tr></table></figure>
 
