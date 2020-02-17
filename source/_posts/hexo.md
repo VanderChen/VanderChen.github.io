@@ -6,20 +6,20 @@ tags:
 - Travis CI
 ---
 
-**将基于Hexo的个人blog使用Travis CI自动部署到Github Pages**
+# 将基于Hexo的个人blog使用Travis CI自动部署到Github Pages
 
 具体操作流程参考：
 - 建站流程 [Hexo建站](https://hexo.io/zh-cn/docs/setup)
 - 利用Travis CI实现自动部署 [将 Hexo 部署到 GitHub Pages](https://hexo.io/zh-cn/docs/github-pages)
 
-# 踩坑
+## 踩坑
 
-## 建站过程
+### 建站过程
 
 - `hexo init <project name>` 需要一个空文件夹，可建好后粘贴内容到Git目录下
 - 删除未使用主题，否则在部署到github pages时可能引起报错
 
-## Git
+### Git
 
 源码仅包含以下文件
 
@@ -41,7 +41,7 @@ db.json
 package-lock.json
 ```
 
-## Travis CI
+### Travis CI
 因为github pages规则的变化，user pages（即以\<user name\>.github.io命名的repo）生成pages文件仅仅只能放在master branch中。
 
 ```
