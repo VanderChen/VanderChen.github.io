@@ -1,13 +1,11 @@
 ---
-title: Kubernetes + Docker + (Python Websockets)
+title: Ubuntu下搭建Kubernetes + Docker环境
 date: {{ date }}
 tags: 
 - K8s
 - Docker
 - Python
 ---
-
-# Ubuntu下搭建Kubernetes + Docker环境
 
 ## 安装
 

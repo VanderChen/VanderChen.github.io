@@ -1,12 +1,10 @@
 ---
-title: Hexo + GitHub Pages + Travis CI
+title: 使用Travis CI自动部署基于Hexo的个人blog到Github Pages
 date: {{ date }}
 tags: 
 - Hexo
 - Travis CI
 ---
-
-# 将基于Hexo的个人blog使用Travis CI自动部署到Github Pages
 
 具体操作流程参考：
 - 建站流程 [Hexo建站](https://hexo.io/zh-cn/docs/setup)
