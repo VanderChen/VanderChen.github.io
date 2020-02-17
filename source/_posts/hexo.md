@@ -7,6 +7,7 @@ tags:
 ---
 
 具体操作流程参考：
+
 - 建站流程 [Hexo建站](https://hexo.io/zh-cn/docs/setup)
 - 利用Travis CI实现自动部署 [将 Hexo 部署到 GitHub Pages](https://hexo.io/zh-cn/docs/github-pages)
 
@@ -21,7 +22,7 @@ tags:
 
 源码仅包含以下文件
 
-```
+```tree
 .
 ├── _config.yml
 ├── package.json
@@ -33,22 +34,25 @@ tags:
 ```
 
 在以Node为模板的.gitignore文件中需要加入
-```
+
+```gitignore
 public/
 db.json
 package-lock.json
 ```
 
 ### Travis CI
+
 因为github pages规则的变化，user pages（即以\<user name\>.github.io命名的repo）生成pages文件仅仅只能放在master branch中。
 
-```
+```note
 User pages must be built from the master branch.
 ```
 
 因此建立hexo branch作为source code，通过Travis CI部署到master branch下。
 
 具体配置文件如下：
+
 ``` yaml
 sudo: false
 language: node_js

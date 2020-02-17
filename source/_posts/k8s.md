@@ -14,7 +14,7 @@ tags:
 
 ### 踩坑--网络问题
 
-**阿里云镜像安装k8s**
+#### 阿里云镜像安装k8s
 
 ```bash
 apt-get update && apt-get install -y apt-transport-https
@@ -35,10 +35,9 @@ apt-get update
 apt-get install -y kubelet kubeadm kubectl
 ```
 
-**k8s.gcr.io拉取镜像问题**
+#### k8s.gcr.io拉取镜像问题
 
 [Azure中国-开源镜像站点](http://mirror.azure.cn/)提供了gcr.io及k8s.gcr.io容器仓库的镜像代理服务
-
 
 Minikube简单解决方案
 
@@ -47,6 +46,7 @@ minikube start --vm-driver=<driver> --image-repository=gcr.azk8s.cn/google_conta
 ```
 
 *TODO:*
+
 - [ ] 使用国内镜像批量替换
 
 ## 配置
