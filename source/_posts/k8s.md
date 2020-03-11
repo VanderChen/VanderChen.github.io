@@ -2,17 +2,33 @@
 title: Ubuntu下搭建Kubernetes + Docker环境
 date: {{ date }}
 tags: 
-- K8s
+- Kubernetes
 - Docker
-- Python
 ---
+
+在Ubuntu环境下搭建Kubernetes管理的Docker集群
 
 ## 安装
 
 - Ubuntu下Docker的安装 [Get Docker Engine - Community for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-- Kubernetes的安装：实验环境下我们使用MiniKube [Install Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) 
+- Kubernetes的安装：实验环境下我们使用MiniKube [Install Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/)
 
 ### 踩坑--网络问题
+
+#### Docker换源
+
+```json
+{
+  "registry-mirrors": [
+    "http://registry.docker-cn.com",
+    "http://docker.mirrors.ustc.edu.cn"
+  ],
+  "insecure-registries": [
+    "registry.docker-cn.com",
+    "docker.mirrors.ustc.edu.cn"
+  ]
+}
+```
 
 #### 阿里云镜像安装k8s
 
@@ -51,3 +67,4 @@ minikube start --vm-driver=<driver> --image-repository=gcr.azk8s.cn/google_conta
 
 ## 配置
 
+TODO

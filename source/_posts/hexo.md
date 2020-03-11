@@ -1,6 +1,6 @@
 ---
 title: 使用Travis CI自动部署基于Hexo的个人blog到Github Pages
-date: {{ date }}
+date: 2018-2-17
 tags: 
 - Hexo
 - Travis CI
