@@ -1,9 +1,10 @@
 ---
 title: Ubuntu下搭建Kubernetes + Docker环境
-date: {{ date }}
+date: 2020-2-18
 tags: 
 - Kubernetes
 - Docker
+- Helm
 ---
 
 在Ubuntu环境下搭建Kubernetes管理的Docker集群
