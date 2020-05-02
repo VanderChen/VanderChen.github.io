@@ -1,10 +1,11 @@
 ---
-title: Ubuntu下设置HTTP Proxy
+title: Ubuntu相关设置Tips
 date: 2020-5-1
 tags: 
 - Ubuntu
-- Proxy
 ---
+
+## Ubuntu设置Proxy
 
 *以下配置均在Ubuntu18.04下测试可用*
 
