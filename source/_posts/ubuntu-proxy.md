@@ -6,7 +6,8 @@ tags:
 - Ubuntu
 ---
 
-## Ubuntu设置Proxy
+
+
 
 _以下配置均在Ubuntu18.04下测试可用_
 
