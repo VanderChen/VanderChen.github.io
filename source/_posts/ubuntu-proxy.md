@@ -13,13 +13,16 @@ _以下配置均在Ubuntu18.04下测试可用_
 
 ### bash设置HTTP Proxy
 
-
+```bash
+export http_proxy=http://user:password@proxy.server:port/;
+export https_proxy=http://user:password@proxy.server:port/;
+```
 
 ### APT设置HTTP Proxy
 
 创建文件`/etc/apt/apt.conf.d/proxy.conf`并添加如下配置
 
-```conf
+```bash
 Acquire::http::Proxy "http://user:password@proxy.server:port/";
 Acquire::https::Proxy "http://user:password@proxy.server:port/";
 ```
